@@ -9,6 +9,9 @@ public class Sign {
         return text.length()/width;
     }
     public void getLines(){
+        if (text.length() >= width){
+
+
         int num = numberOfLines();
         int x = 0;
         for (int i = 0; i < num - 1; i++){
@@ -20,5 +23,5 @@ public class Sign {
         System.out.println(text.substring(x + width));}
         else System.out.println(text.substring(x + width, x + width + 2) + ";" + text.substring(x + width + 2));
 
-    }
+    }}
 }
