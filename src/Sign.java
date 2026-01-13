@@ -12,16 +12,16 @@ public class Sign {
         if (text.length() >= width){
 
 
-        int num = numberOfLines();
-        int x = 0;
-        for (int i = 0; i < num - 1; i++){
-            int k = width * i;
-            System.out.print(text.substring(k, k + width) + ";");
-            x = k;
-        }
-        if(text.length() % 2 == 0){
-        System.out.println(text.substring(x + width));}
-        else System.out.println(text.substring(x + width, x + width + 2) + ";" + text.substring(x + width + 2));
+            int num = numberOfLines();
+            int x = 0;
+            for (int i = 0; i < num - 1; i++){
+                int k = width * i;
+                System.out.print(text.substring(k, k + width) + ";");
+                x = k;
+            }
+            if(text.length() % 2 == 0){
+                System.out.println(text.substring(x + width));}
+            else System.out.println(text.substring(x + width, x + width + 2) + ";" + text.substring(x + width + 2));
 
-    }}
+        }}
 }
