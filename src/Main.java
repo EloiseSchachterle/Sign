@@ -11,10 +11,15 @@ public class Main {
         sign1.getLines();
         System.out.println();
         Sign sign2 = new Sign("ABCD", 10);
-        sign2.getLines();
+         sign2.getLines();
         Sign sign3 = new Sign("ABCDEF", 6);
         System.out.println(sign3.numberOfLines());
         sign3.getLines();
+        Sign sign4 = new Sign("",4);
+        sign4.numberOfLines();
+        Sign sign5 = new Sign("AB_CD_EF",2);
+        System.out.println(sign5.numberOfLines());
+        sign5.getLines();
 
     }
 }
